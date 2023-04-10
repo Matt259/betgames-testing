@@ -39,7 +39,7 @@ def start_prompt():
     
     while True:
         print("-"*60)
-        print("1. Test if the sector roulette assigns the proper Coefficient;")
+        print("1. Test if the sector bet assigns the proper Coefficient;")
         print("2. Test if the betslip fields buttons work as intended(Numbered buttons should add that much into the amount while the C should clear it);")
         print("3. Test whether the possible win is calculated correctly;")
         print("4. Exit;")
@@ -63,7 +63,7 @@ def start_prompt():
                 if timer < 5:
                     time.sleep(45)
                     print("Will need to wait around 45 seconds for a new timer to come up.")
-                #All of the roulette options(buttons)
+                #All of the bet options(buttons)
                 sector_buttons = driver.find_elements(By.CLASS_NAME, "RBfdfT0Ix_iKoPjpITfX")
                 
                 if user_input == "1":
